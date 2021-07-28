@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "target": "esnext",
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "allowJs": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "noEmit": true,
+        "esModuleInterop": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "jsx": "preserve",
+        "noImplicitAny": false,
+        "paths": {
+            "@assets/*": ["assets/*"],
+            "@components/*": ["components/*"],
+            "@lib/*": ["lib/*"],
+            "@store/*": ["store/*"],
+            "@gate/*": ["gate/*"],
+            "@interfaces/*": ["interfaces/*"]
+        }
+    },
+    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js", "components/ui/TradingView/TradinViewOtc/index.jsx"],
+    "exclude": ["node_modules", "out"]
+}

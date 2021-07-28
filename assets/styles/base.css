@@ -1,0 +1,154 @@
+@import './typography.css';
+
+:root {
+    font-family: Rubik;
+}
+
+[data-theme='dark'] {
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+    touch-action: manipulation;
+    /* font-feature-settings: 'case' 1, 'rlig' 1, 'calt' 0; */
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+    font-family: Rubik, IranSans !important;
+}
+.rtl {
+    direction: rtl;
+}
+.ltr {
+    direction: ltr;
+}
+body {
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+}
+
+a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.scrollbar-none::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-none {
+    scrollbar-color: transparent transparent;
+    scrollbar-width: none;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-text-fill-color: white;
+    -webkit-box-shadow: 0 0 0px 1000px #1d272e inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.hide-scrollbar {
+    /*FireFox*/
+    scrollbar-width: none;
+    /*IE10+*/
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+.hide-scrollbar::-webkit-scrollbar {
+    /*Chrome, Safari, Edge*/
+    display: none;
+}
+
+/*
+ *  STYLE 3
+ */
+
+.custom_scrollbar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: transparent;
+}
+
+.custom_scrollbar::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent;
+}
+
+.custom_scrollbar::-webkit-scrollbar-thumb {
+    background-color: #000000;
+}
+
+.selectToday {
+    display: none !important;
+}
+input[type='radio']:checked + label {
+    color: #00a275;
+    background: #181f24;
+}
+@media only screen and (max-width: 640px) {
+    .tether-element {
+        transform: translateX(0px) translateY(173px) translateZ(0px) !important;
+    }
+}
+
+.react-grid-item.react-grid-placeholder {
+    background: #1c242b !important;
+    opacity: 0.2;
+    transition-duration: 100ms;
+    z-index: 2;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+/* input,
+textarea {
+    width: auto;
+    min-width: 1em;
+    grid-area: 1 / 2;
+    font: inherit;
+    padding: 0.25em;
+    margin: 0;
+    resize: none;
+    background: none;
+    appearance: none;
+    border: none;
+} */
+
+span {
+    padding: 0.25em;
+}
+.react-grid-item {
+    transition: none !important;
+}
+.tether-element {
+    z-index: 100;
+}

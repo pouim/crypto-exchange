@@ -1,0 +1,6 @@
+.card {
+    @apply bg-main flex-col rounded-b-lg rounded-l-lg rounded-r-lg text-center grid grid-cols-1 gap-6 pt-3;
+}
+.card_h_text {
+    @apply p-3 bg-gradient-to-r from-main-green to-main-green-500 rounded-t-lg text-center w-full;
+}

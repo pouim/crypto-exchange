@@ -1,0 +1,11 @@
+.fit {
+    min-height: calc(100vh - 88px);
+}
+
+/* Checkbox */
+input:checked + svg {
+    display: block;
+}
+.btn {
+    @apply text-center py-2 px-10 rounded-lg w-full transition-opacity outline-none;
+}

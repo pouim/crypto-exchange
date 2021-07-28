@@ -1,0 +1,4 @@
+.card_bg {
+    background: rgb(30, 41, 51);
+    background: linear-gradient(180deg, rgba(30, 41, 51, 1) 0%, rgba(23, 32, 39, 1) 100%);
+}

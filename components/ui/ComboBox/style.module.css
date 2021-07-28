@@ -1,0 +1,47 @@
+.input {
+    @apply transition-all text-light duration-300 rounded-full;
+}
+
+.label {
+    top: 3px;
+    margin-right: 0.5rem;
+    max-width: fit-content !important;
+    left: 0;
+    right: 0;
+    @apply text-gray-400;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    height: 25px;
+    font-size: 15px;
+    cursor: text;
+    transition: 0.2s ease-in-out;
+    box-sizing: border-box;
+}
+
+.input,
+.label {
+    width: 100%;
+    font-size: 12px;
+    padding: 0.5rem;
+}
+.input.error {
+    border: 1px solid #f8384e;
+}
+.label.error {
+    color: #f8384e !important;
+}
+
+.input:valid + .label,
+.input:focus + .label {
+    color: #26a69a;
+    font-size: 12px;
+    right: 16px;
+    margin-right: 0.5rem;
+    top: -22px;
+    max-width: fit-content;
+    pointer-events: none;
+    @apply bg-transparent;
+}
+
+

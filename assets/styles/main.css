@@ -1,0 +1,16 @@
+@tailwind base;
+@import './base.css';
+
+@tailwind components;
+@import './components.css';
+
+@tailwind utilities;
+
+.walk-item {
+    transition: all ease 1s;
+}
+
+.walk-item:hover {
+    background: rgba(21, 29, 36, var(--tw-bg-opacity));
+}
+
